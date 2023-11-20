@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/> <!-- Note the closing '/' character -->
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <h3>List of The Cars</h3>
+    <th:block th:each="sun:${welcome}">
+        <li th:text="${sun}"></li>
+    </th:block>
+</ul>
+
+</body>
+</html>
